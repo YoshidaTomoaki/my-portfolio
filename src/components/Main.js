@@ -5,7 +5,7 @@ import picAboutMe from '../images/aboutMe.jpg'
 import demo from '../images/pic02.jpg'
 import picMusic from '../images/music.jpg'
 //import picProgramming from '../images/programming.jpg'
-//import picMovie from '../images/movie.jpg'
+import picMovie from '../images/movie.gif'
 
 class Main extends React.Component {
   render() {
@@ -43,13 +43,31 @@ class Main extends React.Component {
 
         <article id="movie" className={`${this.props.article === 'movie' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Movie</h2>
-          <span className="image main"><img src={demo} alt="" /></span>
+          <span className="image main"><img src={picMovie} alt="" /></span>
           <h3 className="major">2019</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+          <p>
+            <a target="_blank" href="https://www.youtube.com/watch?v=TwBSSPcdhkA">Live Movie / Kirikou and the sorceress</a>
+            <br/>
+            <a target="_blank" href="https://www.youtube.com/watch?v=GFbpn29j1tk">Rouningyou / Kirikou and the sorceress</a>
+            <br/>
+            <a target="_blank" href="https://www.youtube.com/watch?v=37SwV0Pasjg">Maboroshi no yoru / Kirikou and the sorceress</a>
+            <br/>
+            <a target="_blank" href="https://www.youtube.com/watch?v=BYjXIptrvN4">MUTANT / Kirikou and the sorceress</a>
+            <br/>
+            <a target="_blank" href="https://www.youtube.com/watch?v=Qt0qC0viXgE">Ryugujou / Kirikou and the sorceress</a>
+            <br/>
+            <a target="_blank" href="https://www.youtube.com/watch?v=4zMo_Gme63g">Tengoku no kairou (trailer) / Kirikou and the sorceress</a>
+          </p>
           <h3 className="major">2018</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+          <p>
+            <a target="_blank" href="https://www.youtube.com/watch?v=U-Xgf5Qjdkw">2ndSingle Sakana to bouken (PV) / Kirikou and the sorceress</a>
+            <br/>
+            <a target="_blank" href="https://www.youtube.com/watch?v=5p3GKOvLWW8">Live Trailer / Kirikou and the sorceress</a>
+          </p>
           <h3 className="major">~2017</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+          <p>
+            <a target="_blank" href="https://www.youtube.com/watch?v=S3C5mpd9sRQ">Syuumatsuron(PV) / Kirikou and the sorceress</a>
+          </p>
           {close}
         </article>
 
