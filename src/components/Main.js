@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import picAboutMe from '../images/aboutMe.jpg'
-import demo from '../images/pic02.jpg'
+import picProgramming from '../images/programming.jpg'
 import picMusic from '../images/music.jpg'
 //import picProgramming from '../images/programming.jpg'
 import picMovie from '../images/movie.gif'
@@ -27,9 +27,12 @@ class Main extends React.Component {
 
         <article id="programming" className={`${this.props.article === 'programming' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Programming</h2>
-          <span className="image main"><img src={demo} alt="" /></span>
-          <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-          <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+          <span className="image main"><img src={picProgramming} alt="" /></span>
+          <h3 className="major">Skill</h3>
+          <p>JavaScript<br/>React/ReactNative/Next.js/Gatsby.js/Node.js/Express<br/>Redux/GraphQl/Git/VSCode/CircleCI/Bitrise/DeployGate/etc...</p>
+          <h3 className="major">Work History</h3>
+          <p>2019/03 〜 Freelance(Web/iOS/android developer)</p>
+          <p>2015/04 〜 2019/01 Financial System Engineer(SIer)</p>
           {close}
         </article>
 
@@ -37,7 +40,12 @@ class Main extends React.Component {
           <h2 className="major">Music</h2>
           <span className="image main"><img src={picMusic} alt="" /></span>
           <h3 className="major">Kirikou and the sorceress</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+          <p>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.tunecore.co.jp/artist/kiri-jyo?id=227641&lang=ja">This is Art Music Band in Japan.</a>
+            <br/><br/>
+            Guitar recordings for all songs.<br/><br/>
+            <a target="_blank" rel="noopener noreferrer" href="https://kiri-jyo.com/">OFFICIAL WEBSITE</a>
+          </p>
           {close}
         </article>
 
@@ -46,27 +54,32 @@ class Main extends React.Component {
           <span className="image main"><img src={picMovie} alt="" /></span>
           <h3 className="major">2019</h3>
           <p>
-            <a target="_blank" href="https://www.youtube.com/watch?v=TwBSSPcdhkA">Live Movie / Kirikou and the sorceress</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=TwBSSPcdhkA">Live Movie / Kirikou and the sorceress</a>
             <br/>
-            <a target="_blank" href="https://www.youtube.com/watch?v=GFbpn29j1tk">Rouningyou / Kirikou and the sorceress</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=GFbpn29j1tk">Rouningyou / Kirikou and the sorceress</a>
             <br/>
-            <a target="_blank" href="https://www.youtube.com/watch?v=37SwV0Pasjg">Maboroshi no yoru / Kirikou and the sorceress</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=37SwV0Pasjg">Maboroshi no yoru / Kirikou and the sorceress</a>
             <br/>
-            <a target="_blank" href="https://www.youtube.com/watch?v=BYjXIptrvN4">MUTANT / Kirikou and the sorceress</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=BYjXIptrvN4">MUTANT / Kirikou and the sorceress</a>
             <br/>
-            <a target="_blank" href="https://www.youtube.com/watch?v=Qt0qC0viXgE">Ryugujou / Kirikou and the sorceress</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=Qt0qC0viXgE">Ryugujou / Kirikou and the sorceress</a>
             <br/>
-            <a target="_blank" href="https://www.youtube.com/watch?v=4zMo_Gme63g">Tengoku no kairou (trailer) / Kirikou and the sorceress</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=4zMo_Gme63g">Tengoku no kairou (trailer) / Kirikou and the sorceress</a>
           </p>
           <h3 className="major">2018</h3>
           <p>
-            <a target="_blank" href="https://www.youtube.com/watch?v=U-Xgf5Qjdkw">2ndSingle Sakana to bouken (PV) / Kirikou and the sorceress</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=U-Xgf5Qjdkw">2ndSingle Sakana to bouken (PV) / Kirikou and the sorceress</a>
             <br/>
-            <a target="_blank" href="https://www.youtube.com/watch?v=5p3GKOvLWW8">Live Trailer / Kirikou and the sorceress</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=5p3GKOvLWW8">Live Trailer / Kirikou and the sorceress</a>
           </p>
           <h3 className="major">~2017</h3>
           <p>
-            <a target="_blank" href="https://www.youtube.com/watch?v=S3C5mpd9sRQ">Syuumatsuron(PV) / Kirikou and the sorceress</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=S3C5mpd9sRQ">Syuumatsuron(PV) / Kirikou and the sorceress</a>
+          </p>
+          <br/>
+          <h2 className="major">Tool</h2>
+          <p>
+            AdobeCC(PremirePro/AfterEffect/Photoshop/Illustrator/Lightroom)/Logic pro
           </p>
           {close}
         </article>
