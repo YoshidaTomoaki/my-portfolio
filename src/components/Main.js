@@ -5,7 +5,6 @@ import picAboutMe from '../images/aboutMe.jpg'
 import picProgramming from '../images/programming.jpg'
 import picMusic from '../images/music.jpg'
 import picMovie from '../images/movie.gif'
-
 class Main extends React.Component {
   render() {
 
@@ -28,7 +27,10 @@ class Main extends React.Component {
           <h2 className="major">Programming</h2>
           <span className="image main"><img src={picProgramming} alt="" /></span>
           <h3 className="major">Skill</h3>
-          <p>JavaScript<br/>React/ReactNative/Next.js/Gatsby.js/Node.js/Express<br/>Redux/GraphQl/Git/VSCode/CircleCI/Bitrise/DeployGate/etc...</p>
+          <p>JavaScript
+            <br/>React/ReactNative/Next.js/Gatsby.js/Node.js
+            <br/>Redux/GraphQl/Git/VSCode
+            <br/>CircleCI/Bitrise/DeployGate/etc...</p>
           <h3 className="major">Work History</h3>
           <p>2019/03 〜 Freelance(Web/iOS/android developer)</p>
           <p>2015/04 〜 2019/01 Financial System Engineer(SIer)</p>
