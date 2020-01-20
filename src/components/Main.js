@@ -80,7 +80,9 @@ class Main extends React.Component {
           <br/>
           <h2 className="major">Tool</h2>
           <p>
-            AdobeCC(PremirePro/AfterEffect/Photoshop/Illustrator/Lightroom)/Logic pro
+            AdobeCC(PremirePro/AfterEffect/Photoshop/
+            <br/>Illustrator/Lightroom)/
+            <br/>Logic pro
           </p>
           {close}
         </article>
