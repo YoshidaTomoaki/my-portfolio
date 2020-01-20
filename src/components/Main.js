@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 import picAboutMe from '../images/aboutMe.jpg'
 import picProgramming from '../images/programming.jpg'
 import picMusic from '../images/music.jpg'
-//import picProgramming from '../images/programming.jpg'
 import picMovie from '../images/movie.gif'
 
 class Main extends React.Component {
