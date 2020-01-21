@@ -38,4 +38,4 @@ jobs:
       # - run: yarn test
 
       # run deploy!
-      - yarn deploy
+      - yarn build && firebase deploy
