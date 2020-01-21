@@ -23,7 +23,7 @@ jobs:
       - run: yarn install
       - run:
           name: 'Install Dependecies'
-          command: yarn add --save-dev firebase-tools
+          command: yarn global add firebase-tools
 
       - save_cache:
           paths:
