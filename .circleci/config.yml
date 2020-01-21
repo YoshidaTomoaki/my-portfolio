@@ -1,14 +1,20 @@
-
-#
-# Javascript Node CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
  version: 2
  jobs:
-   build:
+   oneBuild:
      docker:
-       - image: circleci/ruby:2.4.1
+       - image: circleci/node:7.1.0
      steps:
        - checkout
        - run: echo "A first hello"
+   twoBuild:
+     docker:
+       - image: circleci/node:7.1.0
+     steps:
+       - checkout
+       - run: echo "A first hello"
+   workflows:
+    version: 2
+    oneBuild_and_twoBuild:
+     jobs:
+       - oneBuild
+       - twoBuild
