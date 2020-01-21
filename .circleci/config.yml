@@ -35,4 +35,4 @@ jobs:
           command: yarn build
       - run:
           name: 'Deploy to Hosting'
-          command: firebase deploy --token $FIREBASE_TOKEN
+          command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN
