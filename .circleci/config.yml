@@ -20,10 +20,10 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: npm install
+      - run: yarn install
       - run:
           name: 'Install Dependecies'
-          command: npm install --save-dev firebase-tools
+          command: yarn add --save-dev firebase-tools
 
       - save_cache:
           paths:
