@@ -2,6 +2,10 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
+# CircleCIではnpm -gでのコマンド実行が出来ないため、
+# 事前にfirebase-toolsをローカルでプロジェクトにインストールしておくようにしています。。
+# yarn add --dev firebase-tools
+#
 version: 2
 jobs:
   build:
@@ -20,7 +24,7 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: npm install
+      - run: yarn install
 
       - save_cache:
           paths:
@@ -28,8 +32,17 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run:
-          name: 'Build Client Code(react-scripts によるビルド実行)'
+          name: 'gatsby build'
           command: yarn build
       - run:
-          name: 'Deploy to Hosting'
-          command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN
+          name: 'Deploy to firebase Hosting'
+          command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN #firebaseTokenはcircleciの環境変数
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master # masterブランチのみを実行対象
