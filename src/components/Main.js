@@ -5,7 +5,48 @@ import picAboutMe from '../images/aboutMe.jpg'
 import picProgramming from '../images/programming.jpg'
 import picMusic from '../images/music.jpg'
 import picMovie from '../images/movie.gif'
+
+//const firebase = require("firebase");
+//require("firebase/functions");
+
+import firebase from 'firebase';
+import 'firebase/auth';
+
+const config = {
+  apiKey: "AIzaSyBE81ER2WQhND0ddpjJdh2OK_ZtU0E9UhU",
+  authDomain: "my-portfolio-a7b14.firebaseapp.com",
+  databaseURL: "my-portfolio-a7b14.firebaseio.com",
+  projectId: "my-portfolio-a7b14",
+  storageBucket: "my-portfolio-a7b14.appspot.com",
+  messagingSenderId: "831567689940"
+};
+
+firebase.initializeApp(config);
+
+
+
 class Main extends React.Component {
+  constructor(){
+    super()
+    this.onSubmit = this.onSubmit.bind(this)
+  }
+
+  onSubmit(e){
+    e.preventDefault()
+    let data = {}
+    data.name = e.target.name.value
+    data.email = e.target.email.value
+    data.message = e.target.message.value
+    let sendMail = firebase.functions().httpsCallable('sendMail');
+    sendMail(data)
+      .then((r)=>console.log('success',r))
+      .catch((e)=>console.log('error',e))
+    e.target.name.value = ""
+    e.target.email.value = ""
+    e.target.message.value = ""
+    e.target.value = ""
+  }
+
   render() {
 
     let close = <div className="close" onClick={() => {this.props.onCloseArticle()}}></div>
@@ -89,7 +130,7 @@ class Main extends React.Component {
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+          <form method="post" onSubmit={this.onSubmit}>
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />

@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "author": "Tomoaki Yoshida",
   "dependencies": {
+    "firebase": "^7.7.0",
+    "firebase-admin": "^8.9.1",
+    "firebase-functions": "^3.3.0",
     "gatsby": "^2.0.0",
     "gatsby-plugin-manifest": "^2.0.2",
     "gatsby-plugin-offline": "^2.0.5",
@@ -13,7 +16,8 @@
     "node-sass": "^4.9.3",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "xoauth2": "^1.2.0"
   },
   "keywords": [
     "gatsby"
