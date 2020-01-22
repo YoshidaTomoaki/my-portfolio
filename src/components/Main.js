@@ -9,19 +9,25 @@ import picMovie from '../images/movie.gif'
 //const firebase = require("firebase");
 //require("firebase/functions");
 
-import firebase from 'firebase';
-import 'firebase/auth';
+let firebase;
+if (typeof window !== 'undefined') {
+  firebase = require('firebase')
+  require('firebase/auth')
 
-const config = {
-  apiKey: "AIzaSyBE81ER2WQhND0ddpjJdh2OK_ZtU0E9UhU",
-  authDomain: "my-portfolio-a7b14.firebaseapp.com",
-  databaseURL: "my-portfolio-a7b14.firebaseio.com",
-  projectId: "my-portfolio-a7b14",
-  storageBucket: "my-portfolio-a7b14.appspot.com",
-  messagingSenderId: "831567689940"
-};
+  const config = {
+    apiKey: "AIzaSyBE81ER2WQhND0ddpjJdh2OK_ZtU0E9UhU",
+    authDomain: "my-portfolio-a7b14.firebaseapp.com",
+    databaseURL: "my-portfolio-a7b14.firebaseio.com",
+    projectId: "my-portfolio-a7b14",
+    storageBucket: "my-portfolio-a7b14.appspot.com",
+    messagingSenderId: "831567689940"
+  };
+  
+  firebase.initializeApp(config);
+  
+}
 
-firebase.initializeApp(config);
+
 
 
 

@@ -1,0 +1,52 @@
+[debug] [2020-01-22T08:13:05.668Z] ----------------------------------------------------------------------
+[debug] [2020-01-22T08:13:05.670Z] Command:       /Users/tomoaki/.ndenv/versions/v8.15.0/bin/node /Users/tomoaki/.ndenv/versions/v8.15.0/bin/firebase serve
+[debug] [2020-01-22T08:13:05.670Z] CLI Version:   7.12.1
+[debug] [2020-01-22T08:13:05.670Z] Platform:      darwin
+[debug] [2020-01-22T08:13:05.670Z] Node Version:  v8.15.0
+[debug] [2020-01-22T08:13:05.671Z] Time:          Wed Jan 22 2020 17:13:05 GMT+0900 (JST)
+[debug] [2020-01-22T08:13:05.671Z] ----------------------------------------------------------------------
+[debug] [2020-01-22T08:13:05.671Z] 
+[debug] [2020-01-22T08:13:05.677Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-22T08:13:05.677Z] > authorizing via signed-in user
+[debug] [2020-01-22T08:13:05.678Z] [iam] checking project my-portfolio-a7b14 for permissions ["firebase.projects.get"]
+[debug] [2020-01-22T08:13:05.679Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portfolio-a7b14:testIamPermissions  
+
+[debug] [2020-01-22T08:13:06.486Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-22T08:13:06.488Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/my-portfolio-a7b14  
+ 
+[debug] [2020-01-22T08:13:06.917Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/tomoaki/my-portfolio'...
+[info] 
+[debug] [2020-01-22T08:13:06.922Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/my-portfolio-a7b14/webApps/-/config  
+ 
+[info] ✔  functions: Using node@8 from host.
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2020-01-22T08:13:08.022Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/tomoaki/my-portfolio/functions" for Cloud Functions...
+[debug] [2020-01-22T08:13:08.050Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-22T08:13:08.050Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-22T08:13:08.050Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-22T08:13:08.051Z] [worker-~diagnostic~-b381d5bf-248f-46d6-9c48-bd9f65363cf9]: Assigning socketPath: /var/folders/xg/qmhrrl_95h79twy9rk6ckdqc0000gn/T/fire_emu_19970.sock
+[debug] [2020-01-22T08:13:08.051Z] [worker-~diagnostic~-b381d5bf-248f-46d6-9c48-bd9f65363cf9]: BUSY
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2020-01-22T08:13:08.295Z] [runtime-status] [19970] Functions runtime initialized. {"cwd":"/Users/tomoaki/my-portfolio/functions","node_version":"8.15.0"}
+[debug] [2020-01-22T08:13:08.296Z] [runtime-status] [19970] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-22T08:13:08.298Z] [runtime-status] [19970] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/Users/tomoaki/my-portfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-22T08:13:08.299Z] [runtime-status] [19970] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tomoaki/my-portfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-22T08:13:08.299Z] [runtime-status] [19970] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tomoaki/my-portfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (/Users/tomoaki/my-portfolio/functions/index.js:3:44)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at /Users/tomoaki/.ndenv/versions/v8.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:718:33
+    at Generator.next (<anonymous>)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-01-22T08:13:08.431Z] [worker-~diagnostic~-b381d5bf-248f-46d6-9c48-bd9f65363cf9]: exited
+[debug] [2020-01-22T08:13:08.431Z] [worker-~diagnostic~-b381d5bf-248f-46d6-9c48-bd9f65363cf9]: FINISHED
