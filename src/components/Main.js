@@ -79,7 +79,7 @@ class Main extends React.Component {
             <br/>Redux/GraphQl/Git/VSCode
             <br/>CircleCI/Bitrise/DeployGate/etc...</p>
           <h3 className="major">Work History</h3>
-          <p>2019/03 〜 Freelance(Web/iOS/android developer)</p>
+          <p>2019/03 〜 Web/iOS/android developer</p>
           <p>2015/04 〜 2019/01 Financial System Engineer(SIer)</p>
           {close}
         </article>
