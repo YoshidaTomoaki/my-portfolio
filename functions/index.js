@@ -38,7 +38,7 @@ const mailTransport = nodemailer.createTransport({
   ${data.email}
   
   内容：
-  ${data.contents}
+  ${data.message}
   `;
   };
   
