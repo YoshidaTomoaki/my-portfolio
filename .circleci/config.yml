@@ -36,7 +36,7 @@ jobs:
           command: yarn build
       - run:
           name: 'Deploy to firebase Hosting'
-          command: cd functions && yarn install --no-lockfile && ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN #firebaseTokenはcircleciの環境変数
+          command: cd functions && yarn install --no-lockfile && cd ../ && ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN #firebaseTokenはcircleciの環境変数
 
 workflows:
   version: 2
