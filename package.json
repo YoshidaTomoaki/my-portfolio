@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "author": "Tomoaki Yoshida",
   "dependencies": {
+    "@material-ui/core": "^4.9.0",
+    "@material-ui/styles": "^4.9.0",
     "firebase": "^7.7.0",
     "firebase-admin": "^8.9.1",
     "firebase-functions": "^3.3.0",
@@ -17,6 +19,7 @@
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
+    "styled-components": "^5.0.0",
     "xoauth2": "^1.2.0"
   },
   "keywords": [
@@ -28,7 +31,8 @@
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build && firebase deploy", 
+    "gtpagedeploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
     "firebase-tools": "^7.12.1",

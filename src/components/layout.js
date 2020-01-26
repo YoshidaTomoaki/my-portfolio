@@ -39,9 +39,48 @@ const Layout = ({ children, location }) => {
       render={data => (
         <>
           <Helmet
+            htmlAttributes={
+              'ja'
+            }
             title={data.site.siteMetadata.title}
+            titleTemplate={`%s | Yda Works`}
             meta={[
-              { name: 'description', content: 'Yda Workss' }
+              {
+                name: `description`,
+                content: 'Programming & Music & Movie',
+              },
+              {
+                property: `og:title`,
+                content: 'Yda Works',
+              },
+              {
+                property: `og:description`,
+                content: 'Programming & Music & Movie',
+              },
+              {
+                property: `og:type`,
+                content: `website`,
+              },
+              {
+                name: `twitter:card`,
+                content: `summary`,
+              },
+              {
+                name: `twitter:creator`,
+                content: 'Tomoaki Yoshida',
+              },
+              {
+                name: `twitter:title`,
+                content: 'Yda Works',
+              },
+              {
+                name: `twitter:description`,
+                content: 'Programming & Music & Movie',
+              },
+              {
+                name: `og:image`,
+                content: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-a7b14.appspot.com/o/ydasworksOGP.jpg?alt=media&token=b5374a60-e1c3-4062-b657-0a14dc6f94f1',
+              },
             ]}
           >
             <html lang="en" />
