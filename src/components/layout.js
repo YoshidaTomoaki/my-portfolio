@@ -39,9 +39,6 @@ const Layout = ({ children, location }) => {
       render={data => (
         <>
           <Helmet
-            htmlAttributes={
-              'ja'
-            }
             title={data.site.siteMetadata.title}
             titleTemplate={`%s | Yda Works`}
             meta={[

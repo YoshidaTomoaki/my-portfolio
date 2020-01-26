@@ -27,10 +27,6 @@ if (typeof window !== 'undefined') {
   
 }
 
-
-
-
-
 class Main extends React.Component {
   constructor(){
     super()
@@ -43,14 +39,23 @@ class Main extends React.Component {
     data.name = e.target.name.value
     data.email = e.target.email.value
     data.message = e.target.message.value
+
+    // バルデーションちゃんと書く
+    if(data.name === '' || data.email === '' || data.message === '')　return
+
+    // メールエラーパターンちゃんと書く
     let sendMail = firebase.functions().httpsCallable('sendMail');
     sendMail(data)
       .then((r)=>console.log('success',r))
       .catch((e)=>console.log('error',e))
+
     e.target.name.value = ""
     e.target.email.value = ""
     e.target.message.value = ""
     e.target.value = ""
+
+    //[todo]送信エラーパターンとバリデーション
+    this.props.onCloseArticle()
   }
 
   render() {

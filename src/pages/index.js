@@ -5,8 +5,6 @@ import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
 
-import SEO from '../components/seo'
-
 class IndexPage extends React.Component {
   constructor(props) {
     super(props)
@@ -94,7 +92,6 @@ class IndexPage extends React.Component {
   render() {
     return (
       <Layout location={this.props.location}>
-        <SEO />
         <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
           <div id="wrapper">
             <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
