@@ -7,4 +7,6 @@ circle ci
 Starterkit　gatsby-starter-dimension　Thanks!
 **https://github.com/ChangoMan/gatsby-starter-dimension**
 
+test change
+
 auto deploy firebase hosting then push remote master branch.
