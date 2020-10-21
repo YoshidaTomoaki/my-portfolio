@@ -4,7 +4,7 @@ gatsby.js
 firebase Hosting
 circle ci
 
-Starterkit　gatsby-starter-dimension　Thanks!
+Starterkiiiiiiit　gatsby-starter-dimension　Thanks!
 **https://github.com/ChangoMan/gatsby-starter-dimension**
 
 test change
